@@ -1,0 +1,321 @@
+/* VibraMovement — Design system (Figma Make) */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --vm-primary: #c8f54a;
+  --vm-primary-dark: #a8d62e;
+  --vm-bg: #0d0d0d;
+  --vm-fg: #ffffff;
+  --vm-muted: rgba(255, 255, 255, 0.65);
+  --vm-border: rgba(255, 255, 255, 0.08);
+  --vm-radius-sm: 6px;
+  --vm-radius-md: 12px;
+  --vm-radius-lg: 20px;
+  --vm-font-display: "Barlow Condensed", sans-serif;
+  --vm-font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--vm-font-body);
+  background-color: var(--vm-bg);
+  color: var(--vm-fg);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vm-primary);
+  border-radius: 99px;
+}
+
+::selection {
+  background: var(--vm-primary);
+  color: var(--vm-bg);
+}
+
+/* ── Tipografía ── */
+.vm-display {
+  font-family: var(--vm-font-display) !important;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.vm-hero-title {
+  font-family: var(--vm-font-display) !important;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--vm-fg) !important;
+}
+
+.vm-section-title {
+  font-family: var(--vm-font-display) !important;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--vm-fg) !important;
+}
+
+.vm-section-label {
+  font-family: var(--vm-font-body) !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--vm-primary) !important;
+}
+
+.vm-body {
+  font-family: var(--vm-font-body) !important;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--vm-muted) !important;
+}
+
+.vm-stat-number {
+  font-family: var(--vm-font-display) !important;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: var(--vm-primary) !important;
+}
+
+/* ── Botones ── */
+.vm-btn-primary {
+  background-color: var(--vm-primary) !important;
+  color: var(--vm-bg) !important;
+  border: none !important;
+  border-radius: var(--vm-radius-sm) !important;
+  font-family: var(--vm-font-body) !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  padding: 14px 28px !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.vm-btn-primary:hover {
+  background-color: var(--vm-primary-dark) !important;
+  transform: translateY(-1px);
+}
+
+.vm-btn-outline {
+  background-color: transparent !important;
+  color: var(--vm-fg) !important;
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-sm) !important;
+  font-family: var(--vm-font-body) !important;
+  font-weight: 500 !important;
+  font-size: 0.9rem !important;
+  padding: 14px 28px !important;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.vm-btn-outline:hover {
+  border-color: var(--vm-primary) !important;
+  color: var(--vm-primary) !important;
+}
+
+.vm-btn-ghost {
+  background: transparent !important;
+  color: var(--vm-primary) !important;
+  border: none !important;
+  font-family: var(--vm-font-body) !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  cursor: pointer;
+}
+
+/* ── Tarjetas ── */
+.vm-card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-md) !important;
+  padding: 24px !important;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.vm-card:hover {
+  border-color: rgba(200, 245, 74, 0.35) !important;
+  transform: translateY(-4px);
+}
+
+.vm-card-service {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-lg) !important;
+  padding: 32px !important;
+  transition: border-color 0.25s ease;
+}
+
+.vm-card-service:hover {
+  border-color: var(--vm-primary) !important;
+}
+
+.vm-card-product {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-md) !important;
+  overflow: hidden;
+  transition: border-color 0.25s ease;
+}
+
+.vm-card-product:hover {
+  border-color: rgba(200, 245, 74, 0.4) !important;
+}
+
+/* ── Badge / etiqueta ── */
+.vm-badge {
+  display: inline-block;
+  background: rgba(200, 245, 74, 0.12) !important;
+  color: var(--vm-primary) !important;
+  border: 1px solid rgba(200, 245, 74, 0.25) !important;
+  border-radius: 99px !important;
+  font-family: var(--vm-font-body) !important;
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 14px !important;
+}
+
+/* ── Header ── */
+.vm-header {
+  background: rgba(13, 13, 13, 0.92) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--vm-border) !important;
+}
+
+.vm-header-scrolled {
+  background: rgba(13, 13, 13, 0.98) !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.vm-nav-link {
+  font-family: var(--vm-font-body) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  color: var(--vm-muted) !important;
+  transition: color 0.2s ease;
+}
+
+.vm-nav-link:hover,
+.vm-nav-link-active {
+  color: var(--vm-primary) !important;
+}
+
+/* ── Secciones ── */
+.vm-section-dark {
+  background-color: var(--vm-bg) !important;
+}
+
+.vm-section-alt {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+.vm-hero {
+  background-color: var(--vm-bg) !important;
+  min-height: 90vh;
+}
+
+/* ── Testimonios ── */
+.vm-testimonial-tab {
+  background: transparent !important;
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-md) !important;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.vm-testimonial-tab-active {
+  border-color: var(--vm-primary) !important;
+  background: rgba(200, 245, 74, 0.08) !important;
+}
+
+.vm-testimonial-quote {
+  font-family: var(--vm-font-body) !important;
+  font-size: 1.125rem !important;
+  font-style: italic;
+  line-height: 1.75;
+  color: var(--vm-fg) !important;
+}
+
+/* ── Avatar iniciales ── */
+.vm-avatar {
+  background: rgba(200, 245, 74, 0.15) !important;
+  color: var(--vm-primary) !important;
+  border-radius: 50% !important;
+  font-family: var(--vm-font-display) !important;
+  font-weight: 800 !important;
+  font-size: 1rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Footer ── */
+.vm-footer {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border-top: 1px solid var(--vm-border) !important;
+}
+
+/* ── Animaciones reveal ── */
+.vm-fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.vm-fade-in-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* ── Certificado YMCA ── */
+.vm-cert-box {
+  background: linear-gradient(135deg, rgba(200, 245, 74, 0.08), rgba(200, 245, 74, 0.02)) !important;
+  border: 1px solid rgba(200, 245, 74, 0.2) !important;
+  border-radius: var(--vm-radius-lg) !important;
+}
+
+/* ── Feature pills ── */
+.vm-feature-pill {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid var(--vm-border) !important;
+  border-radius: var(--vm-radius-sm) !important;
+  font-family: var(--vm-font-body) !important;
+  font-size: 0.875rem !important;
+  color: var(--vm-fg) !important;
+  padding: 10px 16px !important;
+}
+
+/* ── Número de servicio ── */
+.vm-service-number {
+  font-family: var(--vm-font-display) !important;
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(200, 245, 74, 0.2) !important;
+  line-height: 1;
+}
+
+/* ── Quote fundadora ── */
+.vm-founder-quote {
+  font-family: var(--vm-font-display) !important;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  color: var(--vm-primary) !important;
+  border-left: 3px solid var(--vm-primary);
+  padding-left: 20px;
+}
