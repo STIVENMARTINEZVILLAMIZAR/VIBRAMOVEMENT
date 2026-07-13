@@ -1,26 +1,61 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "public/*": ["src/public/*"],
-      "backend/*": ["src/backend/*"],
-      "backend/*.web.js": ["src/backend/*.web.js"]
-    },
-    "module": "ESNext",
-    "target": "ES2020",
-    "moduleResolution": "node",
-    "allowJs": true,
-    "checkJs": false,
-    "noEmit": true
-  },
-  "include": [
-    "src/**/*.js",
-    "src/**/*.json"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
   "typeAcquisition": {
     "enable": true
-  }
+  },
+  "references": [
+    {
+      "path": ".wix/types/c1dmp/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/cky88/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/cpfm8/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/ey4si/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/f3ave/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/g3w2h/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/gr7ny/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/kxvte/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/m5zs9/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/pojip/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/rvnrf/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/seoy6/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/tmexk/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/z0koq/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/p698b/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/masterPage/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/backend/jsconfig.json"
+    },
+    {
+      "path": ".wix/types/public/jsconfig.json"
+    }
+  ]
 }
