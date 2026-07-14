@@ -66,7 +66,7 @@ VibraMovement necesitaba un sitio web profesional que reflejara su misión de ha
 - [x] Configuración de catálogo en Wix Stores
 - [x] Publicación del sitio
 
-## AUTOR -- STIVEN MARTINEZ VILLAMIZAR
+## AUTOR -- STIVEN MARTINEZ VILLAMIZAR --
 
 ---
 
