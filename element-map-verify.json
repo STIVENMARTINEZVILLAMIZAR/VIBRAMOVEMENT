@@ -1,0 +1,734 @@
+{
+  "report": {
+    "MASTER": {
+      "header": {
+        "value": "header1",
+        "exists": false
+      },
+      "footer": {
+        "value": "footer1",
+        "exists": false
+      },
+      "menu": {
+        "value": "horizontalMenu1",
+        "exists": false
+      },
+      "hamburgerOpen": {
+        "value": "hamburgerOpenButton1",
+        "exists": false
+      },
+      "hamburgerClose": {
+        "value": "hamburgerCloseButton1",
+        "exists": false
+      },
+      "hamburgerOverlay": {
+        "value": "hamburgerOverlay1",
+        "exists": false
+      },
+      "logo": {
+        "value": "vectorImage2",
+        "exists": false
+      },
+      "cart": {
+        "value": "shoppingCartIcon1",
+        "exists": false
+      }
+    },
+    "INICIO": {
+      "heroSection": {
+        "value": "section10",
+        "exists": true
+      },
+      "heroTitle": {
+        "value": "text22",
+        "exists": true
+      },
+      "heroSubtitle": {
+        "value": "text21",
+        "exists": true
+      },
+      "heroCtaPrimary": {
+        "value": "button5",
+        "exists": true
+      },
+      "heroImage": {
+        "value": "imageX4",
+        "exists": true
+      },
+      "statsSection": {
+        "value": "section5",
+        "exists": true
+      },
+      "statsRepeater": {
+        "value": "repeater1",
+        "exists": true
+      },
+      "certSection": {
+        "value": "section9",
+        "exists": true
+      },
+      "certText": {
+        "value": "text19",
+        "exists": true
+      },
+      "certCta": {
+        "value": "button3",
+        "exists": true
+      },
+      "certImage": {
+        "value": "imageX3",
+        "exists": true
+      },
+      "aboutSection": {
+        "value": "section4",
+        "exists": true
+      },
+      "aboutLabel": {
+        "value": "text3",
+        "exists": true
+      },
+      "aboutTitle": {
+        "value": "text4",
+        "exists": true
+      },
+      "aboutText1": {
+        "value": "text5",
+        "exists": true
+      },
+      "aboutText2": {
+        "value": "text6",
+        "exists": true
+      },
+      "aboutExtra": {
+        "value": "text7",
+        "exists": true
+      },
+      "servicesSection": {
+        "value": "section6",
+        "exists": true
+      },
+      "servicesRepeater": {
+        "value": "repeater2",
+        "exists": true
+      },
+      "servicesLabel": {
+        "value": "text11",
+        "exists": true
+      },
+      "servicesTitle": {
+        "value": "text12",
+        "exists": true
+      },
+      "servicesCta": {
+        "value": "button1",
+        "exists": true
+      },
+      "servicesImage": {
+        "value": "imageX2",
+        "exists": true
+      },
+      "impactSection": {
+        "value": "section7",
+        "exists": true
+      },
+      "impactRepeater": {
+        "value": "repeater3",
+        "exists": true
+      },
+      "impactLabel": {
+        "value": "text15",
+        "exists": true
+      },
+      "impactTitle": {
+        "value": "text16",
+        "exists": true
+      },
+      "impactCta": {
+        "value": "button2",
+        "exists": true
+      },
+      "servicesWidgetSection": {
+        "value": "section8",
+        "exists": true
+      },
+      "serviceListWidget": {
+        "value": "serviceListWidget1",
+        "exists": true
+      },
+      "btnVerServicios": {
+        "value": "button4",
+        "exists": true
+      },
+      "btnConoceHistoria": {
+        "value": "button4",
+        "exists": true
+      }
+    },
+    "INICIO_TEXTS": {
+      "text22": {
+        "value": "HERO.title",
+        "exists": false
+      },
+      "text21": {
+        "value": "HERO.subtitle",
+        "exists": false
+      },
+      "button5": {
+        "value": "HERO.ctaPrimary",
+        "exists": false
+      },
+      "text19": {
+        "value": "${CERTIFICADO.icon} ${CERTIFICADO.title} — ${CERTIFICADO.subtitle}. ${CERTIFICADO.description}",
+        "exists": false
+      },
+      "text3": {
+        "value": "ABOUT.label",
+        "exists": false
+      },
+      "text4": {
+        "value": "ABOUT.title",
+        "exists": false
+      },
+      "text5": {
+        "value": "ABOUT.text1",
+        "exists": false
+      },
+      "text6": {
+        "value": "ABOUT.text2",
+        "exists": false
+      },
+      "text7": {
+        "value": "ABOUT.features.map((f) => `${f.icon} ${f.text}`).join('  ·  ')",
+        "exists": false
+      },
+      "text11": {
+        "value": "SERVICES.label",
+        "exists": false
+      },
+      "text12": {
+        "value": "SERVICES.title",
+        "exists": false
+      },
+      "text15": {
+        "value": "Nuestro impacto",
+        "exists": false
+      },
+      "text16": {
+        "value": "FOUNDER.title",
+        "exists": false
+      },
+      "text20": {
+        "value": "${FOUNDER.label}: ${FOUNDER.title}",
+        "exists": false
+      },
+      "button3": {
+        "value": "STORE.cta",
+        "exists": false
+      }
+    },
+    "INICIO_CLASSES": {
+      "section10": {
+        "value": "vm-hero",
+        "exists": false
+      },
+      "text22": {
+        "value": "vm-hero-title",
+        "exists": false
+      },
+      "text21": {
+        "value": "vm-body",
+        "exists": false
+      },
+      "button5": {
+        "value": "vm-btn-primary",
+        "exists": false
+      },
+      "section4": {
+        "value": "vm-section-alt",
+        "exists": false
+      },
+      "text3": {
+        "value": "vm-section-label",
+        "exists": false
+      },
+      "text4": {
+        "value": "vm-section-title",
+        "exists": false
+      },
+      "text5": {
+        "value": "vm-body",
+        "exists": false
+      },
+      "text6": {
+        "value": "vm-body",
+        "exists": false
+      },
+      "section6": {
+        "value": "vm-section-dark",
+        "exists": false
+      },
+      "text11": {
+        "value": "vm-section-label",
+        "exists": false
+      },
+      "text12": {
+        "value": "vm-section-title",
+        "exists": false
+      },
+      "button1": {
+        "value": "vm-btn-primary",
+        "exists": false
+      },
+      "section7": {
+        "value": "vm-section-alt",
+        "exists": false
+      },
+      "text15": {
+        "value": "vm-section-label",
+        "exists": false
+      },
+      "text16": {
+        "value": "vm-section-title",
+        "exists": false
+      },
+      "button2": {
+        "value": "vm-founder-quote",
+        "exists": false
+      },
+      "section9": {
+        "value": "vm-cert-box",
+        "exists": false
+      },
+      "button4": {
+        "value": "vm-btn-ghost",
+        "exists": false
+      },
+      "section8": {
+        "value": "vm-section-dark",
+        "exists": false
+      },
+      "button3": {
+        "value": "vm-btn-ghost",
+        "exists": false
+      }
+    },
+    "SOBRE": {
+      "heroSection": {
+        "value": "section4",
+        "exists": true
+      },
+      "heroTitle": {
+        "value": "text3",
+        "exists": true
+      },
+      "heroCta": {
+        "value": "button1",
+        "exists": true
+      },
+      "heroImage": {
+        "value": "imageX1",
+        "exists": true
+      },
+      "aboutSection": {
+        "value": "section6",
+        "exists": true
+      },
+      "aboutRepeater": {
+        "value": "repeater1",
+        "exists": true
+      },
+      "aboutTitle": {
+        "value": "text10",
+        "exists": true
+      },
+      "aboutSubtitle": {
+        "value": "text11",
+        "exists": true
+      },
+      "teamSection": {
+        "value": "section7",
+        "exists": true
+      },
+      "ctaSection": {
+        "value": "section5",
+        "exists": true
+      },
+      "ctaTitle": {
+        "value": "text6",
+        "exists": true
+      },
+      "ctaBtn": {
+        "value": "button2",
+        "exists": true
+      }
+    },
+    "PROGRAMAS": {
+      "heroSection": {
+        "value": "section4",
+        "exists": true
+      },
+      "heroTitle": {
+        "value": "text3",
+        "exists": true
+      },
+      "heroSubtitle": {
+        "value": "text4",
+        "exists": true
+      },
+      "heroImage": {
+        "value": "imageX1",
+        "exists": true
+      },
+      "programsRepeater": {
+        "value": "repeater1",
+        "exists": true
+      },
+      "programsSection": {
+        "value": "section5",
+        "exists": true
+      },
+      "programsTitle": {
+        "value": "text9",
+        "exists": true
+      },
+      "programsSubtitle": {
+        "value": "text10",
+        "exists": true
+      },
+      "programsCta": {
+        "value": "button1",
+        "exists": true
+      },
+      "galleryRepeater": {
+        "value": "repeater2",
+        "exists": true
+      },
+      "gallerySection": {
+        "value": "section6",
+        "exists": true
+      },
+      "servicesRepeater": {
+        "value": "repeater3",
+        "exists": true
+      },
+      "servicesSection": {
+        "value": "section7",
+        "exists": true
+      },
+      "slideshowRepeater": {
+        "value": "repeater4",
+        "exists": true
+      },
+      "slideshowSection": {
+        "value": "section8",
+        "exists": true
+      },
+      "contactForm": {
+        "value": "form1",
+        "exists": true
+      }
+    },
+    "TIENDA": {
+      "heroSection": {
+        "value": "section4",
+        "exists": true
+      },
+      "heroTitle": {
+        "value": "text3",
+        "exists": true
+      },
+      "productsRepeater": {
+        "value": "repeater1",
+        "exists": true
+      },
+      "productsSection": {
+        "value": "section5",
+        "exists": true
+      },
+      "faqWidget": {
+        "value": "faqWidget1",
+        "exists": true
+      },
+      "slideshowRepeater": {
+        "value": "repeater2",
+        "exists": true
+      },
+      "slideshowSection": {
+        "value": "section6",
+        "exists": true
+      },
+      "slideshowCta": {
+        "value": "button1",
+        "exists": true
+      }
+    },
+    "CONTACTO": {
+      "heroSection": {
+        "value": "section4",
+        "exists": true
+      },
+      "heroTitle": {
+        "value": "text3",
+        "exists": true
+      },
+      "heroSubtitle": {
+        "value": "text4",
+        "exists": true
+      },
+      "heroImage": {
+        "value": "imageX1",
+        "exists": true
+      },
+      "contactForm": {
+        "value": "form1",
+        "exists": true
+      },
+      "infoSection": {
+        "value": "section5",
+        "exists": true
+      },
+      "infoTitle": {
+        "value": "text11",
+        "exists": true
+      },
+      "infoText1": {
+        "value": "text10",
+        "exists": true
+      },
+      "infoText2": {
+        "value": "text9",
+        "exists": true
+      },
+      "infoText3": {
+        "value": "text8",
+        "exists": true
+      },
+      "secondaryForm": {
+        "value": "form2",
+        "exists": true
+      }
+    }
+  },
+  "missing": [
+    {
+      "objectName": "MASTER",
+      "key": "header",
+      "value": "header1"
+    },
+    {
+      "objectName": "MASTER",
+      "key": "footer",
+      "value": "footer1"
+    },
+    {
+      "objectName": "MASTER",
+      "key": "menu",
+      "value": "horizontalMenu1"
+    },
+    {
+      "objectName": "MASTER",
+      "key": "hamburgerOpen",
+      "value": "hamburgerOpenButton1"
+    },
+    {
+      "objectName": "MASTER",
+      "key": "hamburgerClose",
+      "value": "hamburgerCloseButton1"
+    },
+    {
+      "objectName": "MASTER",
+      "key": "hamburgerOverlay",
+      "value": "hamburgerOverlay1"
+    },
+    {
+      "objectName": "MASTER",
+      "key": "logo",
+      "value": "vectorImage2"
+    },
+    {
+      "objectName": "MASTER",
+      "key": "cart",
+      "value": "shoppingCartIcon1"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text22",
+      "value": "HERO.title"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text21",
+      "value": "HERO.subtitle"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "button5",
+      "value": "HERO.ctaPrimary"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text19",
+      "value": "${CERTIFICADO.icon} ${CERTIFICADO.title} — ${CERTIFICADO.subtitle}. ${CERTIFICADO.description}"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text3",
+      "value": "ABOUT.label"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text4",
+      "value": "ABOUT.title"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text5",
+      "value": "ABOUT.text1"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text6",
+      "value": "ABOUT.text2"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text7",
+      "value": "ABOUT.features.map((f) => `${f.icon} ${f.text}`).join('  ·  ')"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text11",
+      "value": "SERVICES.label"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text12",
+      "value": "SERVICES.title"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text15",
+      "value": "Nuestro impacto"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text16",
+      "value": "FOUNDER.title"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "text20",
+      "value": "${FOUNDER.label}: ${FOUNDER.title}"
+    },
+    {
+      "objectName": "INICIO_TEXTS",
+      "key": "button3",
+      "value": "STORE.cta"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "section10",
+      "value": "vm-hero"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "text22",
+      "value": "vm-hero-title"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "text21",
+      "value": "vm-body"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "button5",
+      "value": "vm-btn-primary"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "section4",
+      "value": "vm-section-alt"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "text3",
+      "value": "vm-section-label"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "text4",
+      "value": "vm-section-title"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "text5",
+      "value": "vm-body"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "text6",
+      "value": "vm-body"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "section6",
+      "value": "vm-section-dark"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "text11",
+      "value": "vm-section-label"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "text12",
+      "value": "vm-section-title"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "button1",
+      "value": "vm-btn-primary"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "section7",
+      "value": "vm-section-alt"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "text15",
+      "value": "vm-section-label"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "text16",
+      "value": "vm-section-title"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "button2",
+      "value": "vm-founder-quote"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "section9",
+      "value": "vm-cert-box"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "button4",
+      "value": "vm-btn-ghost"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "section8",
+      "value": "vm-section-dark"
+    },
+    {
+      "objectName": "INICIO_CLASSES",
+      "key": "button3",
+      "value": "vm-btn-ghost"
+    }
+  ]
+}
