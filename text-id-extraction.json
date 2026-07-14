@@ -1,0 +1,201 @@
+{
+  "pages": {
+    "Calendario de reservas.f3ave.js": {
+      "directTextIds": [
+        "pageTitle"
+      ],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Carrito lateral.p698b.js": {
+      "directTextIds": [],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Contacto.gr7ny.js": {
+      "directTextIds": [
+        "text5"
+      ],
+      "variableTextRefs": [
+        "CONTACTO.heroSubtitle",
+        "CONTACTO.heroTitle",
+        "CONTACTO.infoText1",
+        "CONTACTO.infoText2",
+        "CONTACTO.infoText3",
+        "CONTACTO.infoTitle"
+      ],
+      "resolvedTextIds": {
+        "CONTACTO.heroSubtitle": "'text4'",
+        "CONTACTO.heroTitle": "'text3'",
+        "CONTACTO.infoText1": "'text10'",
+        "CONTACTO.infoText2": "'text9'",
+        "CONTACTO.infoText3": "'text8'",
+        "CONTACTO.infoTitle": "'text11'"
+      },
+      "applyTextsObjects": {}
+    },
+    "Formulario de reserva.cky88.js": {
+      "directTextIds": [],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Inicio.c1dmp.js": {
+      "directTextIds": [
+        "text13",
+        "text14",
+        "text17",
+        "text18",
+        "text20"
+      ],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {
+        "INICIO_TEXTS": [
+          "button3",
+          "button5",
+          "text11",
+          "text12",
+          "text15",
+          "text16",
+          "text19",
+          "text20",
+          "text21",
+          "text22",
+          "text3",
+          "text4",
+          "text5",
+          "text6",
+          "text7"
+        ]
+      }
+    },
+    "masterPage.js": {
+      "directTextIds": [],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Política de Privacidad.m5zs9.js": {
+      "directTextIds": [],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Programas.z0koq.js": {
+      "directTextIds": [
+        "collapsibleText1",
+        "text15",
+        "text16",
+        "text5",
+        "text6",
+        "text8"
+      ],
+      "variableTextRefs": [
+        "PROGRAMAS.heroSubtitle",
+        "PROGRAMAS.heroTitle",
+        "PROGRAMAS.programsSubtitle",
+        "PROGRAMAS.programsTitle"
+      ],
+      "resolvedTextIds": {
+        "PROGRAMAS.heroSubtitle": "'text4'",
+        "PROGRAMAS.heroTitle": "'text3'",
+        "PROGRAMAS.programsSubtitle": "'text10'",
+        "PROGRAMAS.programsTitle": "'text9'"
+      },
+      "applyTextsObjects": {}
+    },
+    "Página de agradecimiento.ey4si.js": {
+      "directTextIds": [
+        "thankYouSubtitle",
+        "thankYouTitle"
+      ],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Página de miembros.cpfm8.js": {
+      "directTextIds": [],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Página de pago.seoy6.js": {
+      "directTextIds": [],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Página de servicio.pojip.js": {
+      "directTextIds": [],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Página del carrito.g3w2h.js": {
+      "directTextIds": [],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Reserva online.tmexk.js": {
+      "directTextIds": [
+        "pageSubtitle",
+        "pageTitle"
+      ],
+      "variableTextRefs": [],
+      "resolvedTextIds": {},
+      "applyTextsObjects": {}
+    },
+    "Sobre Nosotros.rvnrf.js": {
+      "directTextIds": [
+        "text4",
+        "text7",
+        "text8",
+        "text9"
+      ],
+      "variableTextRefs": [
+        "SOBRE.aboutSubtitle",
+        "SOBRE.aboutTitle",
+        "SOBRE.ctaTitle",
+        "SOBRE.heroTitle"
+      ],
+      "resolvedTextIds": {
+        "SOBRE.aboutSubtitle": "'text11'",
+        "SOBRE.aboutTitle": "'text10'",
+        "SOBRE.ctaTitle": "'text6'",
+        "SOBRE.heroTitle": "'text3'"
+      },
+      "applyTextsObjects": {}
+    },
+    "Tienda.kxvte.js": {
+      "directTextIds": [
+        "collapsibleText1",
+        "text4",
+        "text5",
+        "text6",
+        "text7"
+      ],
+      "variableTextRefs": [
+        "TIENDA.heroTitle"
+      ],
+      "resolvedTextIds": {
+        "TIENDA.heroTitle": "'text3'"
+      },
+      "applyTextsObjects": {}
+    }
+  },
+  "elementMapObjects": [
+    "CONTACTO",
+    "INICIO",
+    "INICIO_CLASSES",
+    "INICIO_TEXTS",
+    "MASTER",
+    "PROGRAMAS",
+    "SOBRE",
+    "TIENDA"
+  ],
+  "resolvedVariables": {}
+}
