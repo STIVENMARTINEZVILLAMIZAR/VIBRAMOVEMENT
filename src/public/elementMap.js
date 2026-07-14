@@ -17,8 +17,8 @@ export const MASTER = {
 export const INICIO = {
   // section10 — Hero
   heroSection: 'section10',
-  heroTitle: 'text21',
-  heroSubtitle: 'text22',
+  heroTitle: 'text22',
+  heroSubtitle: 'text21',
   heroCtaPrimary: 'button5',
   heroImage: 'imageX4',
 
