@@ -1,10 +1,39 @@
 import wixLocation from 'wix-location-frontend';
 import wixWindowFrontend from 'wix-window-frontend';
+import { AUTO_ID_FALLBACKS } from './autoIdFallbacks';
 
 /** Obtiene un elemento de forma segura (no rompe si falta en el editor) */
 export function getEl(id) {
   try {
-    return $w(`#${id}`);
+    // allow passing an array of candidate ids
+    if (Array.isArray(id)) {
+      for (const cand of id) {
+        try {
+          const el = $w(`#${cand}`);
+          if (el) return el;
+        } catch (_) {}
+      }
+      return null;
+    }
+
+    // try exact id first
+    try {
+      const el = $w(`#${id}`);
+      if (el) return el;
+    } catch (_) {}
+
+    // try fallback candidates generated from .wix types
+    const fallbacks = AUTO_ID_FALLBACKS[id];
+    if (Array.isArray(fallbacks)) {
+      for (const cand of fallbacks) {
+        try {
+          const el = $w(`#${cand}`);
+          if (el) return el;
+        } catch (_) {}
+      }
+    }
+
+    return null;
   } catch (_) {
     return null;
   }
