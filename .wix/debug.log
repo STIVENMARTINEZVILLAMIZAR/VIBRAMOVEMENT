@@ -1,0 +1,20 @@
+----- CLI crash report at 2026-07-13T23:19:03.663Z
+Error Trace
+FailedToIdentifyProgramFlow: FailedToIdentifyProgramFlow
+    at _Command.<anonymous> (C:\Users\bitz\AppData\Roaming\npm\node_modules\@wix\cli\src\program.ts:76:15)
+    at _Command.emit (node:events:508:28)
+    at _Command._parseCommand (C:\Users\bitz\AppData\Roaming\npm\node_modules\node_modules\commander\lib\command.js:1607:14)
+    at _Command.parseAsync (C:\Users\bitz\AppData\Roaming\npm\node_modules\node_modules\commander\lib\command.js:1104:16)
+    at <anonymous> (C:\Users\bitz\AppData\Roaming\npm\node_modules\@wix\cli\src\index.tsx:119:39)
+Error Info
+{}
+----- CLI crash report at 2026-07-13T23:23:43.502Z
+Error Trace
+FailedToIdentifyProgramFlow: FailedToIdentifyProgramFlow
+    at _Command.<anonymous> (C:\Users\bitz\AppData\Roaming\npm\node_modules\@wix\cli\src\program.ts:76:15)
+    at _Command.emit (node:events:508:28)
+    at _Command._parseCommand (C:\Users\bitz\AppData\Roaming\npm\node_modules\node_modules\commander\lib\command.js:1607:14)
+    at _Command.parseAsync (C:\Users\bitz\AppData\Roaming\npm\node_modules\node_modules\commander\lib\command.js:1104:16)
+    at <anonymous> (C:\Users\bitz\AppData\Roaming\npm\node_modules\@wix\cli\src\index.tsx:119:39)
+Error Info
+{}
