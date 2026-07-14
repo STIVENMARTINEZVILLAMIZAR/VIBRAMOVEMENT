@@ -1,6 +1,6 @@
 import { PROGRAMAS } from 'public/elementMap';
 import { ROUTES, SERVICES } from 'public/siteData';
-import wixLocation from 'wix-location';
+import wixLocation from 'wix-location-frontend';
 import {
   addClass,
   initRevealOnScroll,

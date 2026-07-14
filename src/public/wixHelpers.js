@@ -1,5 +1,5 @@
-import wixLocation from 'wix-location';
-import wixWindow from 'wix-window';
+import wixLocation from 'wix-location-frontend';
+import wixWindowFrontend from 'wix-window-frontend';
 
 /** Obtiene un elemento de forma segura (no rompe si falta en el editor) */
 export function getEl(id) {
@@ -96,13 +96,34 @@ export function show(id, visible = true) {
   }
 }
 
+/** Lee posición Y del scroll (Wix Studio no tiene wixWindow.onScroll) */
+function getScrollY() {
+  return wixWindowFrontend.getBoundingRect().then((info) => {
+    return info?.scroll?.y ?? info?.scrollTop ?? 0;
+  });
+}
+
+/** Simula onScroll con polling — API compatible con Wix Studio */
+function onScroll(handler) {
+  let lastY = -1;
+  setInterval(() => {
+    getScrollY()
+      .then((scrollY) => {
+        if (scrollY !== lastY) {
+          lastY = scrollY;
+          handler({ scrollY });
+        }
+      })
+      .catch(() => {});
+  }, 250);
+}
+
 /** Header sticky al hacer scroll */
 export function initStickyHeader(headerId = 'header') {
   const header = getEl(headerId);
   if (!header) return;
 
-  wixWindow.onScroll((event) => {
-    const scrollY = event?.scrollY ?? 0;
+  onScroll(({ scrollY }) => {
     if (scrollY > 60) {
       header.customClassList?.add('vm-header-scrolled');
     } else {
@@ -111,7 +132,7 @@ export function initStickyHeader(headerId = 'header') {
   });
 }
 
-/** Fade-in progresivo al cargar y al hacer scroll */
+/** Fade-in progresivo al cargar */
 export function initRevealOnScroll(elementIds) {
   elementIds.forEach((id) => addClass(id, 'vm-fade-in'));
 
@@ -120,7 +141,7 @@ export function initRevealOnScroll(elementIds) {
   };
 
   setTimeout(reveal, 200);
-  wixWindow.onScroll(reveal);
+  onScroll(reveal);
 }
 
 /** Formatea precio */
