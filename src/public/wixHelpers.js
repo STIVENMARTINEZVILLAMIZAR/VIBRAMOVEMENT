@@ -18,6 +18,18 @@ export function setText(id, value) {
   }
 }
 
+/** Aplica muchos textos de una vez: { text22: 'Hola', button5: 'Click' } */
+export function applyTexts(textMap) {
+  Object.entries(textMap).forEach(([id, value]) => {
+    if (value != null && value !== '') setText(id, value);
+  });
+}
+
+/** Aplica clases CSS a muchos elementos de una vez */
+export function applyClasses(classMap) {
+  Object.entries(classMap).forEach(([id, className]) => addClass(id, className));
+}
+
 /** Asigna clase CSS custom via Velo */
 export function addClass(id, className) {
   const el = getEl(id);

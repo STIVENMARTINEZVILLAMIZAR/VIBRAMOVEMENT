@@ -1,7 +1,20 @@
 /**
- * Mapa de IDs reales del Editor Wix (generados automáticamente).
- * Basado en .wix/types/*.d.ts del sitio VibraMovement.
+ * Mapa de IDs del Editor Wix + contenido en un solo lugar.
+ * Si un texto no cambia: edítalo en el Editor Wix y deja USE_CODE_TEXT = false.
  */
+
+import {
+  ABOUT,
+  CERTIFICADO,
+  FOUNDER,
+  HERO,
+  SERVICES,
+  STORE,
+  TESTIMONIALS,
+} from 'public/siteData';
+
+/** false = textos los pones directo en el Editor Wix (más rápido para la clienta) */
+export const USE_CODE_TEXT = true;
 
 export const MASTER = {
   header: 'header1',
@@ -62,6 +75,54 @@ export const INICIO = {
   // Botones adicionales
   btnVerServicios: 'button4',
   btnConoceHistoria: 'button4',
+};
+
+/**
+ * Todos los textos de Inicio en UN solo objeto.
+ * Formato: 'idDelElemento': 'texto a mostrar'
+ * Solo ajusta el ID si cambia en el editor — no toques Inicio.c1dmp.js
+ */
+export const INICIO_TEXTS = {
+  text22: HERO.title,
+  text21: HERO.subtitle,
+  button5: HERO.ctaPrimary,
+  text19: `${CERTIFICADO.icon} ${CERTIFICADO.title} — ${CERTIFICADO.subtitle}. ${CERTIFICADO.description}`,
+  text3: ABOUT.label,
+  text4: ABOUT.title,
+  text5: ABOUT.text1,
+  text6: ABOUT.text2,
+  text7: ABOUT.features.map((f) => `${f.icon} ${f.text}`).join('  ·  '),
+  text11: SERVICES.label,
+  text12: SERVICES.title,
+  text15: 'Nuestro impacto',
+  text16: FOUNDER.title,
+  text20: `${FOUNDER.label}: ${FOUNDER.title}`,
+  button3: STORE.cta,
+};
+
+/** Clases CSS por elemento — diseño Figma */
+export const INICIO_CLASSES = {
+  section10: 'vm-hero',
+  text22: 'vm-hero-title',
+  text21: 'vm-body',
+  button5: 'vm-btn-primary',
+  section4: 'vm-section-alt',
+  text3: 'vm-section-label',
+  text4: 'vm-section-title',
+  text5: 'vm-body',
+  text6: 'vm-body',
+  section6: 'vm-section-dark',
+  text11: 'vm-section-label',
+  text12: 'vm-section-title',
+  button1: 'vm-btn-primary',
+  section7: 'vm-section-alt',
+  text15: 'vm-section-label',
+  text16: 'vm-section-title',
+  button2: 'vm-founder-quote',
+  section9: 'vm-cert-box',
+  button4: 'vm-btn-ghost',
+  section8: 'vm-section-dark',
+  button3: 'vm-btn-ghost',
 };
 
 export const SOBRE = {
